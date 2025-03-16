@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main-bg-color: #181a1b;
+    --header-bg-color: #282b2a;
+    --main-text-color: #ffffff;
+    --darkblue: #32485f;
+    --fdarkblue: #435970;
+    --white: #ffffff;
+}
+
+html {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    background-color: var(--header-bg-color);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+p {
+    text-indent: 1em;
+    margin: 0.5rem 0rem;
+}
+
+a {
+    color: #8bb3c9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.top_header {
+    padding: 5vh 5vw;
+
+    display: grid;
+
+    grid-template-columns: 10vw 1fr;
+    gap: 5vw;
+
+    background-color: var(--header-bg-color);
+}
+
+.header_symb {
+    display: block;
+
+    width: 10vw;
+}
+
+.title {
+    color: var(--main-text-color);
+    font-family: serif;
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav_aside {
+    margin-left: 6vw;
+}
+
+.nav_aside_el {
+    list-style: none;
+}
+
+.nav_aside_el > a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    display: block;
+    font-size: 1.6rem;
+    font-weight: normal;
+
+    background-color: var(--darkblue);
+    padding: 1vh 0vw;
+    border-radius: 8px;
+    margin: 2vh 0vw;
+    text-align: center;
+    transition-delay: 1ms;
+    border: 2px solid var(--main-bg-color);
+}
+
+.nav_aside_el > a:hover {
+    background-color: var(--fdarkblue);
+    border: 2px solid var(--white);
+}
+
+.main {
+
+    margin: 5vh 10vw 2vh 0vw;
+    display: grid;
+
+    grid-template-columns: 30vw 1fr;
+    gap: 5vw;
+}
+
+.main_contents {
+    padding: 1vh 0vw;
+}
+
+.main_head {
+    font-size: 2rem;
+    padding-left: 0.5em;
+
+    border-bottom: 2px solid var(--fdarkblue);
+}
+
+.art {
+    margin: 2vh 2vw 5vh 2vw;
+}
+
+.art > h2 {
+    font-size: 1.4rem;
+}
+
+.art > h2::before {
+    content: "・";
+    margin-left: -1em;
+}
+
+.art li {
+    list-style: square;
+}
+
+footer {
+    margin-top: 5vh;
+    padding: 5vh 10vw;
+    background-color: var(--header-bg-color);
+}
+
+footer p {
+    text-indent: 0em;
+}
+
+embed[type="application/pdf"] {
+    filter: none !important;
+    margin-bottom: 5vh;
+}
+
+.noview {
+    visibility: hidden;
+    height: 200px;
+}
+
+#button {
+    background-color: var(--fdarkblue);
+    font-size: 1.2rem;
+    border: none;
+    width: 5rem;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+#button:active {
+    cursor: default;
+    background-color: var(--darkblue);
+}
