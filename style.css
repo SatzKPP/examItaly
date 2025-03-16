@@ -180,3 +180,49 @@ embed[type="application/pdf"] {
     cursor: default;
     background-color: var(--darkblue);
 }
+
+@media screen and (max-width: 800px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+
+    .main {
+        display: block;
+        margin-right: 0;
+    }
+
+    .nav_aside {
+        margin: 0vh 5vw;
+    }
+
+    .nav_aside_el > a {
+        margin: 0;
+        font-size: 1.4rem;
+        width: 60vw;
+        padding: 0.5vh 0vw;
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    .nav_aside_el {
+        margin: 1em 0vw;
+    }
+
+    .main_contents {
+        padding-left: 5vw;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header_symb {
+        display: none;
+    }
+
+    .top_header {
+        display: block;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+    
+}
