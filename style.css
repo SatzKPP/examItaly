@@ -222,8 +222,9 @@ embed[type="application/pdf"] {
     }
 
     .title {
-        font-size: 2rem;
-	text-align: center;
+        font-size: 1.8rem;
+	display: flex;
+	justify-content: center;
     }
     
 }
